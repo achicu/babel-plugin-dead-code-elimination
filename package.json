@@ -1,8 +1,8 @@
 {
-  "name": "babel-plugin-dead-code-elimination",
+  "name": "achicu/babel-plugin-dead-code-elimination",
   "version": "1.0.2",
   "description": "Eliminate dead code",
-  "repository": "babel-plugins/babel-plugin-dead-code-elimination",
+  "repository": "achicu/babel-plugin-dead-code-elimination",
   "license": "MIT",
   "main": "lib/index.js",
   "devDependencies": {
