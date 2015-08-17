@@ -1,5 +1,5 @@
 {
-  "name": "achicu/babel-plugin-dead-code-elimination",
+  "name": "@achicu/babel-plugin-dead-code-elimination",
   "version": "1.0.3",
   "description": "Eliminate dead code",
   "repository": "achicu/babel-plugin-dead-code-elimination",
