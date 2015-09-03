@@ -52,6 +52,12 @@ export default function ({ Plugin, types: t }) {
     },
 
     "ClassDeclaration|FunctionDeclaration"(node, parent, scope) {
+      if (t.isClass(node) && node.decorators && node.decorators.length) {
+        // We don't want to remove classes that have attached decorators.
+        // The decorator itself is referencing the class and might have side effects, like
+        // registering the class somewhere else.
+        return;
+      }
       var binding = scope.getBinding(node.id.name);
       if (binding && !binding.referenced) {
         this.dangerouslyRemove();
